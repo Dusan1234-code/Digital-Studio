@@ -392,7 +392,6 @@ Glyphs list
   border-radius: 50%;
   position: relative;
   padding: 30px;
-  cursor: pointer;
 }
 .header__overlay-nav .header__close::after {
   position: absolute;
@@ -453,11 +452,4 @@ Glyphs list
 .header__net-list .header__net-item .header__net-link:visited {
   color: #6854FC;
   padding: 17px;
-}
-
-main {
-  height: 700vh;
-}
-main p {
-  margin-top: 400vh;
 }
