@@ -1,18 +1,18 @@
 const hamburger = document.querySelector(".js-hamburger");
 const overlay = document.querySelector(".js-overlay");
 const close = document.querySelector(".js-close");
-const body = document.querySelector(".body");
+const body = document.querySelector(".js-body");
 
 
 
 
 
 hamburger.addEventListener("click",()=>{
-    body.classList.add("scroll");
+    body.classList.add("scrollDisabled");
     overlay.classList.toggle("header__overlay--active");
 })
 
 close.addEventListener("click",()=>{
-    body.classList.remove("scroll");
+    body.classList.remove("scrollDisabled");
     overlay.classList.remove("header__overlay--active");
 })

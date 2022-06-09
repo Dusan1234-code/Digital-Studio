@@ -95,7 +95,7 @@ a {
   font-style: normal;
   font-display: swap;
 }
-.body.scroll {
+.body.scrollDisabled {
   overflow: hidden;
 }
 
