@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('../fonts/iconfont.eot?1654700474874');
-	src: url('../fonts/iconfont.eot?#iefix-1654700474874') format('embedded-opentype'),
-		url('../fonts/iconfont.woff2?1654700474874') format('woff2'),
-		url('../fonts/iconfont.woff?1654700474874') format('woff'),
-		url('../fonts/iconfont.ttf?1654700474874') format('truetype');
+	src: url('../fonts/iconfont.eot?1654776102965');
+	src: url('../fonts/iconfont.eot?#iefix-1654776102965') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1654776102965') format('woff2'),
+		url('../fonts/iconfont.woff?1654776102965') format('woff'),
+		url('../fonts/iconfont.ttf?1654776102965') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -33,42 +33,30 @@ iconfont Webfont
 Glyphs list
 */
 
-.icon-airport::before {
+.icon-arrowRight::before {
 	content: '\ea01';
 }
 
-.icon-bicycle::before {
+.icon-facebook::before {
 	content: '\ea02';
 }
 
-.icon-car::before {
+.icon-instagram::before {
 	content: '\ea03';
 }
 
-.icon-dog-park::before {
+.icon-linkedin::before {
 	content: '\ea04';
 }
 
-.icon-ferry::before {
+.icon-twitter::before {
 	content: '\ea05';
 }
 
-.icon-park::before {
+.icon-youtube::before {
 	content: '\ea06';
 }
 
-.icon-restaurant::before {
-	content: '\ea07';
-}
-
-.icon-rocket::before {
-	content: '\ea08';
-}
-
-.icon-toilets::before {
-	content: '\ea09';
-}
-
 .icon-zoo::before {
-	content: '\ea0a';
+	content: '\ea07';
 }

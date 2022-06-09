@@ -1,0 +1,43 @@
+@import "abstracts/variables";
+@import "abstracts/mixin";
+
+.body.scroll{
+    overflow: hidden;
+}
+
+body{
+    color: $myBlack;
+    font-family: $inter;
+}
+
+.container{
+    max-width: 1286px;
+    margin: 0 auto;
+    padding: 0 17px;
+}
+
+.btn{
+    display: inline-block;
+    background-color: $myBlue;
+    padding: 10px 20px;
+    border-radius: $radius;
+    color: $myWhite;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: $inter700;
+    transition: opacity .4s ease;
+    &:hover{
+        @include desktop{
+            opacity: .7;
+        }
+    }
+}
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
