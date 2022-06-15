@@ -9,23 +9,23 @@
 	<link href="./favicon.ico" rel="icon">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="js-body">
+<body class="body js-body">
 	<header class="header">
 		<div class="container header__container">
 			<a href="index.html" class="header__logo"><img src="./images/Logo.png" alt="Logo image"></a>
 			<div class="header__wrapper">
 				<a href="#" class="header__btn btn">Connect with us</a>
-				<div class="header__hamburger-menu js-hamburger">
-					<span class="header__bar first"><span class="sr-only">Top bar displayed</span></span>
-					<span class="header__bar"><span class="sr-only">Middle bar displayed</span></span>
-					<span class="header__bar last"><span class="sr-only">Bottom bar displayed</span></span>
-				</div>
+				<button class="header__hamburger-menu js-hamburger">
+					<span class="header__bar first"><span class="sr-only">Top bar displayed opens up menu</span></span>
+					<span class="header__bar"><span class="sr-only">Middle bar displayed opens up menu</span></span>
+					<span class="header__bar last"><span class="sr-only">Bottom bar displayed opens up menu</span></span>
+				</button>
 			</div>
 			<div class="header__overlay js-overlay">
 				<div class="header__overlay-nav">
 					<a href="#" class="header__overlay-btn btn">
-						<span class="icon-arrowRight"><span class="sr-only">Arrow right displayed</span></span>Start A New Project</a>
-					<a href="#" class="header__close js-close"><span class="sr-only">Closing menu icon</span></a>
+						<span class="icon-arrowRight"><span class="sr-only">Arrow right click leads to a new project</span></span>Start A New Project</a>
+					<a href="#" class="header__close js-close"><span class="sr-only">Closing menu icon click closes menu</span></a>
 				</div>
 				<nav class="header__navbar">
 					<ul class="header__list">
@@ -56,34 +56,112 @@
 				<ul class="header__net-list">
 					<li class="header__net-item">
 						<a href="#" class="header__net-link">
-							<span class="icon-instagram"><span class="sr-only">Instagram icon</span></span>
+							<span class="icon-instagram"><span class="sr-only">Leads to our instagram page</span></span>
 						</a>
 					</li>
 					<li class="header__net-item">
 						<a href="#" class="header__net-link">
-							<span class="icon-facebook"><span class="sr-only">Facebook icon</span></span>
+							<span class="icon-facebook"><span class="sr-only">Leads to our facebook page</span></span>
 						</a>
 					</li>
 					<li class="header__net-item">
 						<a href="#" class="header__net-link">
-							<span class="icon-linkedin"><span class="sr-only">Linkedin icon</span></span>
+							<span class="icon-linkedin"><span class="sr-only">Leads to our linkedin page</span></span>
 						</a>
 					</li>
 					<li class="header__net-item">
 						<a href="#" class="header__net-link">
-							<span class="icon-twitter"><span class="sr-only">Twitter icon</span></span>
+							<span class="icon-twitter"><span class="sr-only">Leads to our twitter page</span></span>
 						</a>
 					</li>
 					<li class="header__net-item">
 						<a href="#" class="header__net-link">
-							<span class="icon-youtube"><span class="sr-only">Youtube icon</span></span>
+							<span class="icon-youtube"><span class="sr-only">Leads to our youtube channel</span></span>
 						</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</header>
-	<main></main>
+	<main>
+		<section class="main">
+			<img src="./images/mainBackground.png" class="main__img" alt="Main background image">
+			<div class="container main__container">
+				<div class="main__content">
+					<span class="main__rating">#1 Digital company in the town!</span>
+					<h1 class="main__heading">Amet sed cursus eu tellus eget.</h1>
+					<p class="main__text">
+						Vitae augue elementum ullamcorper porta adipiscing dui, consequat enim quam. Nisi rhoncus vitae orci duis diam eget faucibus. Nulla enim sit nibh sed.
+					</p>
+					<div class="main__wrapper">
+						<a href="#" class="main__btn btn">Connect With Us</a>
+						<a href="#" class="main__btn-sec">Browse Our Works</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="services">
+			<div class="container services__container">
+				<h3 class="services__heading section-heading">Services that lead the way to better business</h3>
+				<p class="services__text section-text">
+					Faucibus fringilla sed integer cursus tellus et, quis ultricies. Aliquam, faucibus arcu in laoreet ac elementum in eget. Massa urna viverra vulputate euismod pulvinar nibh in vel. Laoreet blandit etiam orci est in vel lacus neque pretium.
+				</p>
+				<div class="services__wrapper">
+					<div class="services__box">
+						<i class="services__box-icon icon-mobile"></i>
+						<h5 class="services__box-heading">Mobile App Designing</h5>
+						<p class="services__box-text">
+							Justo, amet nisl velit quam. Turpis nulla morbi vestibulum morbi cum et. 
+						</p>
+					</div>
+					<div class="services__box">
+						<span class="services__box-icon icon-world"></span>
+						<h5 class="services__box-heading">Website Designing</h5>
+						<p class="services__box-text">
+							Eu aliquam libero vehicula posuere. Orci viverra id pharetra adipiscing. Convallis.
+						</p>
+					</div>
+					<div class="services__box graph">
+						<span class="services__box-icon icon-fire"></span>
+						<h5 class="services__box-heading">Graphic Designing</h5>
+						<p class="services__box-text">
+							Aliquam ut sapien viverra blandit nisi. Nam fames suscipit erat sed id. Risus.
+						</p>
+					</div>
+					<div class="services__box digital">
+						<span class="services__box-icon icon-laptop"></span>
+						<h5 class="services__box-heading">Digital Marketing</h5>
+						<p class="services__box-text">
+							Pulvinar amet ac potenti quam feugiat praesent maecenas. Platea id egestas.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="companies">
+			<div class="companies__container container">
+				<h3 class="companies__heading section-heading">Companies we work with</h3>
+				<p class="companies__text section-text">Dictum tortor, sed scelerisque mattis malesuada. Urna sed magna a sed nulla egestas bibendum eget. Consectetur urna varius dolor, fermentum turpis. Sit malesuada id tortor viverra gravida cras. In quis.</p>
+				<div class="companies__image-wrapper">
+					<div class="companies__first-row">
+						<img src="./images/pepsi.png" class="companies__image" alt="pepsi logo">
+						<img src="./images/greeneye.png" class="companies__image" alt="greeneye logo">
+						<img src="./images/belle.png" class="companies__image" alt="belle logo">
+						<img src="./images/beats.png" class="companies__image" alt="beats logo">
+						<img src="./images/panda.png" class="companies__image" alt="panda logo">
+						<img src="./images/gopro.png" class="companies__image go" alt="gopro logo">
+					</div>
+					<div class="companies__second-row">
+						<img src="./images/huawei.png" class="companies__image second-row" alt="huawei logo">
+						<img src="./images/wolf.png" class="companies__image second-row" alt="wolf logo">
+						<img src="./images/dominos.png" class="companies__image second-row" alt="dominos logo">
+						<img src="./images/starbucks.png" class="companies__image second-row" alt="starbucks logo">
+						<img src="./images/dyson.png" class="companies__image second-row" alt="dyson logo">
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 	<footer></footer>
 	<script src="./js/main.js"></script>
 </body>

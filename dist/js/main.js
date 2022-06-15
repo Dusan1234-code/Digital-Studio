@@ -3,10 +3,6 @@ const overlay = document.querySelector(".js-overlay");
 const close = document.querySelector(".js-close");
 const body = document.querySelector(".js-body");
 
-
-
-
-
 hamburger.addEventListener("click",()=>{
     body.classList.add("scrollDisabled");
     overlay.classList.toggle("header__overlay--active");

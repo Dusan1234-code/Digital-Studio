@@ -1,4 +1,4 @@
-.header{
+.header {
     padding: 28px 0;
     box-shadow: 0px 4px 40px $boxShadowColor;
     @include tablet{
@@ -9,58 +9,53 @@
     }
 }
 
-.header__container{
+.header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .header__wrapper{
+    .header__wrapper {
         display: flex;
         align-items: center;
         gap: 78px;
-        .header__btn{
-            @include mobile{
+        .header__btn {
+            @include mobile {
                 display: none;
             }
         }
     }
 }
 
-.header__hamburger-menu{
+.header__hamburger-menu {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    &:hover{
-     @include desktop{
-        .first, .last{
+    &:hover {
+     @include desktop {
+        .first, .last {
             width: 100%;
             margin-left: 0;
          }   
      }   
         
     }
-    .header__bar{
+    .header__bar {
         display: inline-block;
         width: 36px;
         height: 5px;
         margin: 5px 0;
         background-color: $myBlack;
     }
-    .first{
+    .first {
         width: 20px;
         margin-left: 12px;
     }
-    .last{
+    .last {
         width: 20px;
         margin-left: 4px;
     }
-   
 }
 
-.header__overlay.header__overlay--active{
-    right: 0;
-}
-
-.header__overlay{
+.header__overlay {
     overflow-y: scroll;
     height: 100%;
     position: fixed;
@@ -71,13 +66,16 @@
     background-color: $myWhite;
     z-index: 20;
     transition: right .8s ease-in-out;
-    @include tablet{
+    @include tablet {
         width: 65%;
     }
-    @include mobile{
+    @include mobile {
         width: 100%;
     }
-    .header__net-desc{
+    &.header__overlay--active {
+        right: 0;
+    }
+    .header__net-desc {
         display: inline-block;
         font-size: 18px;
         line-height: 25px;
@@ -85,24 +83,24 @@
     }
 }
 
-.header__overlay-nav{
+.header__overlay-nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap-reverse;
     gap: 30px;
     align-items: center;
-    .header__overlay-btn{
+    .header__overlay-btn {
         position: relative;
-        .icon-arrowRight{
+        .icon-arrowRight {
             margin-right: 14px;
         }
     }
-    .header__close{
+    .header__close {
         background-color: $myGrayTransp;
         border-radius: 50%;
         position: relative;
         padding: 30px;
-        &::after{
+        &::after {
             position: absolute;
             top: 45%;
             left: 50%;
@@ -114,7 +112,7 @@
     }
 }
 
-.header__list{
+.header__list {
     margin-top: 45px;
     display: flex;
     flex-direction: column;
@@ -122,35 +120,35 @@
     font-size: 36px;
     line-height: 50px;
     margin-bottom: 54px;
-    .header__link{
-        &:hover{
-            @include desktop{
-                opacity: .6;
+    .header__link {
+        &:hover {
+            @include desktop { 
+                opacity: 0.6;
             }
         }
-        &:active,&:visited{
+        &:active,&:visited {
             color: $myBlack;
         }
     }
 }
 
-.header__net-list{
+.header__net-list {
     display: flex;
     flex-wrap: wrap;
     font-size: 32px;
     gap: 20px;
-    .header__net-item{
+    .header__net-item {
         background-color: $myBlueTransp;
         border-radius: $radius;
-        transition: background-color .3s ease;
-        &:hover{
-            @include desktop{
+        transition: background-color 0.3s ease;
+        &:hover {
+            @include desktop {
                 background-color: $myYellowBrigth;
             }
         }
         .header__net-link,
         .header__net-link:active,
-        .header__net-link:visited{
+        .header__net-link:visited {
             color: $myBlue;
             padding: 17px;
         }

@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('../fonts/iconfont.eot?1654776102965');
-	src: url('../fonts/iconfont.eot?#iefix-1654776102965') format('embedded-opentype'),
-		url('../fonts/iconfont.woff2?1654776102965') format('woff2'),
-		url('../fonts/iconfont.woff?1654776102965') format('woff'),
-		url('../fonts/iconfont.ttf?1654776102965') format('truetype');
+	src: url('../fonts/iconfont.eot?1655221024689');
+	src: url('../fonts/iconfont.eot?#iefix-1655221024689') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1655221024689') format('woff2'),
+		url('../fonts/iconfont.woff?1655221024689') format('woff'),
+		url('../fonts/iconfont.ttf?1655221024689') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -41,22 +41,38 @@ Glyphs list
 	content: '\ea02';
 }
 
-.icon-instagram::before {
+.icon-fire::before {
 	content: '\ea03';
 }
 
-.icon-linkedin::before {
+.icon-instagram::before {
 	content: '\ea04';
 }
 
-.icon-twitter::before {
+.icon-laptop::before {
 	content: '\ea05';
 }
 
-.icon-youtube::before {
+.icon-linkedin::before {
 	content: '\ea06';
 }
 
-.icon-zoo::before {
+.icon-mobile::before {
 	content: '\ea07';
+}
+
+.icon-twitter::before {
+	content: '\ea08';
+}
+
+.icon-world::before {
+	content: '\ea09';
+}
+
+.icon-youtube::before {
+	content: '\ea0a';
+}
+
+.icon-zoo::before {
+	content: '\ea0b';
 }

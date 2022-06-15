@@ -3,11 +3,11 @@
 
 @import 'icon-font/iconfont';
 
-
 @import "abstracts/mixin";
 @import "abstracts/variables";
 @import "abstracts/fonts";
 
-
-
 @import "layout/header";
+@import "layout/main";
+@import "layout/services";
+@import "layout/companies";

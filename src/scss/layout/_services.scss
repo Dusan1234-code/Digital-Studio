@@ -1,0 +1,107 @@
+.services{
+    padding-top: 20px;
+}
+
+.services__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .services__heading{
+        @include mobile{
+            font-size: 28px;
+            line-height: 39px;
+        }
+    }
+    .services__text{
+        @include tablet{
+            font-size: 16px;
+            line-height: 25px;
+            width: 87%;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        @include mobile{
+            font-size: 14px;
+            line-height: 22px;
+            width: 92%;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.services__wrapper{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;  
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 30px;
+    @include tablet{
+        width: 100%;
+        row-gap: 35px;
+    }
+    @include mobile{
+        row-gap: 45px;
+        grid-template-columns: 1fr;
+    }
+    .digital{
+        @include mobile{
+            order: 3;
+        }
+    }
+    .graph{
+        @include mobile{
+            order: 4;
+        }
+    }
+}
+
+.services__box{
+    text-align: center;
+   .services__box-icon{
+    font-size: 36px;
+    line-height: 36px;
+    color: $myBlue;
+    border-radius: 50%;
+    background-color: $iconBackground;
+    margin-bottom: 30px;
+    padding: 32px;
+    display: inline-block;
+    @include mobile{
+        padding: 17px;
+        line-height: 21px;
+        font-size: 21.6px;
+        margin-bottom: 8px;
+    }
+   } 
+   .services__box-heading{
+    font-size: 22px;
+    line-height: 27px;
+    font-family: $inter600;
+    letter-spacing: 2%;
+    margin-bottom: 18px;
+    color: $myBlue;
+    @include tablet{
+        margin-bottom: 10px;
+    }
+    @include mobile{
+        font-size: 18px;
+        line-height: 28px;
+    }
+   }
+   .services__box-text{
+    letter-spacing: 2%;
+    color: #00000080;
+    width: 75%;
+    line-height: 28px;
+    margin: 0 auto;
+    @include tablet{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    @include mobile{
+        width: 100%;
+        text-align: center;
+    }
+   }
+}  

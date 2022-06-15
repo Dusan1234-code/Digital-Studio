@@ -1,0 +1,32 @@
+.companies {
+    padding-top: 90px;
+    text-align: center;
+    .companies__heading {
+        margin-bottom: 5px;
+    }   
+    .companies__text {
+        width: 70%;
+    }
+}
+
+.companies__image-wrapper {
+    width: 75%;
+    margin: 36px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+    .companies__image {
+        width: 90px;
+        height: 90px;
+    }
+    .companies__first-row {
+        display: flex;
+        gap: 63px;
+    }
+    .companies__second-row {
+        display: flex;
+        gap: 63px;
+
+    }
+}

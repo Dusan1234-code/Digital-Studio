@@ -1,13 +1,12 @@
 @import "abstracts/variables";
 @import "abstracts/mixin";
 
-.body.scrollDisabled{
-    overflow: hidden;
-}
-
-body{
+.body{
     color: $myBlack;
     font-family: $inter;
+    &.scrollDisabled{
+        overflow: hidden;
+    }
 }
 
 .container{
@@ -25,19 +24,38 @@ body{
     font-size: 18px;
     line-height: 25px;
     font-family: $inter700;
-    transition: opacity .4s ease;
+    transition: opacity 0.4s ease;
     &:hover{
         @include desktop{
-            opacity: .7;
+            opacity: 0.7;
         }
     }
 }
 
+.section-heading {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    line-height: 56px;
+    font-family: $inter600;
+}
+
+
+.section-text{
+    font-family: $inter500;
+    letter-spacing: 2%;
+    color: $myGrayService;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 28px;
+}
+
 .sr-only {
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
