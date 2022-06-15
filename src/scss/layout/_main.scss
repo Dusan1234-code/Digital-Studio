@@ -26,28 +26,27 @@
 }
 
 // FIX
-.main__rating{
-    display: flex;
-    align-items: center;
-    gap: 24px;
+.main__rating {
     margin-bottom: 34px;
     background-color: $myMainRatingColor;
     border-radius: $radius;
-    width: 100%;
-    padding: 14px 12px 17px 10px;
+    padding: 14px 20px;
+    display: inline-block;
     color: $myBlack2;
-    @include mobile{
+    @include mobile {
         gap: 10px;
         font-size: 14px;
         line-height: 22px;
     }
-    &::before{
+    &::before {
         content: "";
         display: inline-block;
         width: 40px;
+        vertical-align: middle;
         height: 40px;
-        background-color: $myYellowBrigth;
         border-radius: 50%;
+        margin-right: 15px;
+        background-color: $myYellowBrigth;
     }
 }
 
