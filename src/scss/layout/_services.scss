@@ -21,8 +21,8 @@
         @include mobile{
             font-size: 14px;
             line-height: 22px;
-            width: 92%;
-            margin-bottom: 15px;
+            width: 100%;
+            margin-bottom: 33px;
         }
     }
 }
@@ -41,14 +41,9 @@
         row-gap: 45px;
         grid-template-columns: 1fr;
     }
-    .digital{
-        @include mobile{
-            order: 3;
-        }
-    }
     .graph{
         @include mobile{
-            order: 4;
+            order: 1;
         }
     }
 }

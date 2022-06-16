@@ -3,6 +3,12 @@
     text-align: center;
     .companies__heading {
         margin-bottom: 5px;
+        @include tablet{
+            margin-bottom: 19px;
+        }
+        @include mobile{
+            margin-bottom: 26px;
+        }
     }   
     .companies__text {
         width: 70%;
@@ -11,6 +17,7 @@
             line-height: 25px;
         }
         @include mobile {
+            width: 100%;
             font-size: 14px;
             line-height: 22px;
         }
@@ -36,7 +43,6 @@
     .companies__second-row {
         display: flex;
         gap: 63px;
-        flex-wrap: wrap;
         justify-content: center;
         @include tablet {
             gap: 35px;

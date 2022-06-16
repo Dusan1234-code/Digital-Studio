@@ -1,11 +1,18 @@
 @import "abstracts/variables";
 @import "abstracts/mixin";
 
-.body{
+.body {
     color: $myBlack;
     font-family: $inter;
-    &.scrollDisabled{
-        overflow: hidden;
+    transition:  background-color .2s ease;
+}
+
+.body--scrollDisabled {
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    z-index: 4000;
+    overflow: hidden;
+    & .main__wrapper {
+        pointer-events: none;
     }
 }
 
@@ -43,7 +50,6 @@
 
 .section-text{
     font-family: $inter500;
-    letter-spacing: 2%;
     color: $myGrayService;
     text-align: center;
     width: 80%;
