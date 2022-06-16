@@ -1,6 +1,6 @@
 .main{
     position: relative;
-    padding: 49px 0 33px 0;
+    padding: 53px 0 33px 0;
     overflow: hidden;
     @include mobile{
         padding: 20px 0;
@@ -25,12 +25,11 @@
     transform: translateX(-50%);
 }
 
-// FIX
 .main__rating {
     margin-bottom: 34px;
     background-color: $myMainRatingColor;
     border-radius: $radius;
-    padding: 14px 20px;
+    padding: 14px 10px;
     display: inline-block;
     color: $myBlack2;
     @include mobile {
@@ -61,7 +60,7 @@
     }
 }
 
-.main__heading{
+.main__heading {
     font-family: $inter700;
     font-size: 60px;
     line-height: 72px;

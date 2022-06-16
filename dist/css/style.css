@@ -153,6 +153,12 @@ a {
   margin: 0 auto;
   line-height: 28px;
 }
+@media (max-width: 820px) {
+  .section-text {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
 
 .sr-only {
   position: absolute;
@@ -497,7 +503,7 @@ Glyphs list
 
 .main {
   position: relative;
-  padding: 49px 0 33px 0;
+  padding: 53px 0 33px 0;
   overflow: hidden;
 }
 @media (max-width: 820px) {
@@ -529,7 +535,7 @@ Glyphs list
   margin-bottom: 34px;
   background-color: rgba(196, 196, 196, 0.2);
   border-radius: 20px;
-  padding: 14px 20px;
+  padding: 14px 10px;
   display: inline-block;
   color: rgb(0, 0, 0);
 }
@@ -643,13 +649,12 @@ Glyphs list
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
 }
-@media (max-width: 820px) {
-  .services__container .services__heading {
-    font-size: 28px;
-    line-height: 39px;
-  }
+.services__container .services__heading {
+  margin-bottom: 20px;
+}
+.services__container .services__text {
+  margin-bottom: 30px;
 }
 @media (max-width: 1140px) {
   .services__container .services__text {
@@ -773,6 +778,18 @@ Glyphs list
 .companies .companies__text {
   width: 70%;
 }
+@media (max-width: 1140px) {
+  .companies .companies__text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 820px) {
+  .companies .companies__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 
 .companies__image-wrapper {
   width: 75%;
@@ -793,15 +810,33 @@ Glyphs list
   width: 90px;
   height: 90px;
 }
-.companies__image-wrapper .companies__first-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 63px;
+@media (max-width: 820px) {
+  .companies__image-wrapper .companies__image {
+    width: 38px;
+    height: 38px;
+  }
 }
+.companies__image-wrapper .companies__first-row,
 .companies__image-wrapper .companies__second-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 63px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 1140px) {
+  .companies__image-wrapper .companies__first-row,
+.companies__image-wrapper .companies__second-row {
+    gap: 35px;
+  }
+}
+@media (max-width: 820px) {
+  .companies__image-wrapper .companies__first-row,
+.companies__image-wrapper .companies__second-row {
+    gap: 12px;
+  }
 }

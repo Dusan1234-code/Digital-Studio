@@ -49,6 +49,10 @@
     width: 80%;
     margin: 0 auto;
     line-height: 28px;
+    @include mobile{
+        font-size: 28px;
+        line-height: 39px;
+    }
 }
 
 .sr-only {

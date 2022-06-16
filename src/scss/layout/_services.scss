@@ -6,14 +6,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
     .services__heading{
-        @include mobile{
-            font-size: 28px;
-            line-height: 39px;
-        }
+        margin-bottom: 20px;
     }
     .services__text{
+        margin-bottom: 30px;
         @include tablet{
             font-size: 16px;
             line-height: 25px;
