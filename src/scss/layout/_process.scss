@@ -1,0 +1,89 @@
+.process__container {
+    padding-top: 124px;
+    display: flex;
+    gap: 69px;
+    @include tablet { 
+        gap: 24px;
+    }
+    @include mobile {
+        padding-top: 73px;
+    }
+}
+
+.process__image {
+    height: 794px;
+    @include tablet {
+        height: 446px;
+    }
+    @include mobile { 
+        display: none;
+    }
+}
+
+
+.process__heading  {
+    text-align: left;
+    margin-bottom: 4px;
+    @include mobile {
+        margin-bottom: 26px;
+        text-align: center;
+    }
+}
+
+.process__text {
+    text-align: left;
+    margin: 0 0 33px 0;
+    width: 90%;
+    letter-spacing: 0.02em;
+    @include mobile {
+        margin: 0 auto 45px auto;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.process__box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 33px;
+    @include mobile {
+        margin-bottom: 37px;
+    }
+    .process__icon {
+        padding: 20px;
+        border-radius: $radius;
+        font-size: 20px;
+        margin-right: 20px;
+        @include mobile {
+            padding: 16px;
+        }
+    }
+    .proces__box-heading {
+        margin-bottom: 2px;
+        letter-spacing: 0.02em;
+        line-height: 28px;
+        font-family: $inter600;
+        @include mobile { 
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+    .process__box-text {
+        width: 100%;
+        letter-spacing: 0.02em;
+        line-height: 28px;
+        color: $myGrayService;
+        @include tablet {
+            font-size: 16px;
+            line-height: 25px;
+        }
+        @include mobile {
+            width: 98%;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
+
+
+

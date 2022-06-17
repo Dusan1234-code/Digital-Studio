@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('../fonts/iconfont.eot?1655221024689');
-	src: url('../fonts/iconfont.eot?#iefix-1655221024689') format('embedded-opentype'),
-		url('../fonts/iconfont.woff2?1655221024689') format('woff2'),
-		url('../fonts/iconfont.woff?1655221024689') format('woff'),
-		url('../fonts/iconfont.ttf?1655221024689') format('truetype');
+	src: url('../fonts/iconfont.eot?1655465765697');
+	src: url('../fonts/iconfont.eot?#iefix-1655465765697') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1655465765697') format('woff2'),
+		url('../fonts/iconfont.woff?1655465765697') format('woff'),
+		url('../fonts/iconfont.ttf?1655465765697') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -37,42 +37,59 @@ Glyphs list
 	content: '\ea01';
 }
 
-.icon-facebook::before {
+.icon-deliver::before {
 	content: '\ea02';
+	font-size: 11px;
 }
 
-.icon-fire::before {
+.icon-discovery::before {
 	content: '\ea03';
 }
 
-.icon-instagram::before {
+.icon-execute::before {
 	content: '\ea04';
 }
 
-.icon-laptop::before {
+.icon-facebook::before {
 	content: '\ea05';
 }
 
-.icon-linkedin::before {
+.icon-fire::before {
 	content: '\ea06';
 }
 
-.icon-mobile::before {
+.icon-instagram::before {
 	content: '\ea07';
 }
 
-.icon-twitter::before {
+.icon-laptop::before {
 	content: '\ea08';
 }
 
-.icon-world::before {
+.icon-linkedin::before {
 	content: '\ea09';
 }
 
-.icon-youtube::before {
+.icon-mobile::before {
 	content: '\ea0a';
 }
 
-.icon-zoo::before {
+.icon-plan::before {
 	content: '\ea0b';
+}
+
+.icon-twitter::before {
+	content: '\ea0c';
+}
+
+.icon-world::before {
+	content: '\ea0d';
+}
+
+.icon-youtube::before {
+	content: '\ea0e';
+}
+
+.icon-zoo::before {
+	content: '\ea0f';
 }

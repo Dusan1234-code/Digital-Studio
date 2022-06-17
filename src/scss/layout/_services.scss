@@ -1,19 +1,23 @@
 .services{
-    padding-top: 20px;
+    padding-top: 22px;
+    @include mobile {
+        padding-top: 35px;
+    }
 }
 
-.services__container{
+.services__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .services__heading{
+    .services__heading {
         margin-bottom: 20px;
+        @include mobile {
+            margin-bottom: 25px;
+        }
     }
-    .services__text{
+    .services__text {
         margin-bottom: 30px;
         @include tablet{
-            font-size: 16px;
-            line-height: 25px;
             width: 87%;
             margin-bottom: 50px;
             text-align: center;
@@ -21,13 +25,13 @@
         @include mobile{
             font-size: 14px;
             line-height: 22px;
-            width: 100%;
-            margin-bottom: 33px;
+            width: 98%;
+            margin-bottom: 36px;
         }
     }
 }
 
-.services__wrapper{
+.services__wrapper {
     width: 70%;
     margin: 0 auto;
     display: grid;  
@@ -48,29 +52,29 @@
     }
 }
 
-.services__box{
+.services__box {
     text-align: center;
-   .services__box-icon{
+   .services__box-icon {
     font-size: 36px;
     line-height: 36px;
     color: $myBlue;
     border-radius: 50%;
     background-color: $iconBackground;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     padding: 32px;
     display: inline-block;
     @include mobile{
         padding: 17px;
         line-height: 21px;
         font-size: 21.6px;
-        margin-bottom: 8px;
+        margin-bottom: 21px;
     }
    } 
-   .services__box-heading{
+   .services__box-heading {
     font-size: 22px;
     line-height: 27px;
     font-family: $inter600;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     margin-bottom: 18px;
     color: $myBlue;
     @include tablet{
@@ -81,18 +85,20 @@
         line-height: 28px;
     }
    }
-   .services__box-text{
-    letter-spacing: 2%;
+   .services__box-text {
+    letter-spacing: 0.02em;
     color: #00000080;
-    width: 75%;
+    width: 79%;
     line-height: 28px;
     margin: 0 auto;
     @include tablet{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    @include mobile {
         font-size: 14px;
         line-height: 19px;
-    }
-    @include mobile{
-        width: 100%;
+        width: 92%;
         text-align: center;
     }
    }

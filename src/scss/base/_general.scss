@@ -8,21 +8,23 @@
 }
 
 .body--scrollDisabled {
+    @include desktop{
     background-color: rgba($color: #000000, $alpha: 0.7);
     z-index: 4000;
     overflow: hidden;
     & .main__wrapper {
         pointer-events: none;
     }
+    }
 }
 
-.container{
+.container {
     max-width: 1286px;
     margin: 0 auto;
     padding: 0 17px;
 }
 
-.btn{
+.btn {
     display: inline-block;
     background-color: $myBlue;
     padding: 10px 20px;
@@ -45,19 +47,28 @@
     font-size: 40px;
     line-height: 56px;
     font-family: $inter600;
+    @include mobile {
+        font-size: 28px;
+        line-height: 39px;
+    }
 }
 
 
-.section-text{
+.section-text {
     font-family: $inter500;
     color: $myGrayService;
     text-align: center;
-    width: 80%;
+    width: 86%;
     margin: 0 auto;
+    letter-spacing: 0.02em;
     line-height: 28px;
-    @include mobile{
-        font-size: 28px;
-        line-height: 39px;
+    @include tablet {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    @include mobile { 
+        font-size: 14px;
+        line-height: 22px;
     }
 }
 
@@ -69,3 +80,4 @@
     height: 1px;
     overflow: hidden;
 }
+

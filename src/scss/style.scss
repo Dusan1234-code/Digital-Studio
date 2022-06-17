@@ -8,8 +8,10 @@
 @import "abstracts/mixin";
 @import "abstracts/variables";
 @import "abstracts/fonts";
+@import "abstracts/processIcons";
 
 @import "layout/header";
 @import "layout/main";
 @import "layout/services";
 @import "layout/companies";
+@import "layout/process";
