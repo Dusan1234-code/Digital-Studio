@@ -196,8 +196,8 @@ iconfont Webfont
 */
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/iconfont.eot?1655465765697");
-  src: url("../fonts/iconfont.eot?#iefix-1655465765697") format("embedded-opentype"), url("../fonts/iconfont.woff2?1655465765697") format("woff2"), url("../fonts/iconfont.woff?1655465765697") format("woff"), url("../fonts/iconfont.ttf?1655465765697") format("truetype");
+  src: url("../fonts/iconfont.eot?1655553338632");
+  src: url("../fonts/iconfont.eot?#iefix-1655553338632") format("embedded-opentype"), url("../fonts/iconfont.woff2?1655553338632") format("woff2"), url("../fonts/iconfont.woff?1655553338632") format("woff"), url("../fonts/iconfont.ttf?1655553338632") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -227,7 +227,6 @@ Glyphs list
 
 .icon-deliver::before {
   content: "\ea02";
-  font-size: 11px;
 }
 
 .icon-discovery::before {
@@ -1044,4 +1043,75 @@ Glyphs list
     font-size: 14px;
     line-height: 22px;
   }
+}
+
+.work__container {
+  padding-top: 65px;
+}
+.work__container .work__heading {
+  margin-bottom: 6px;
+}
+.work__container .work__text {
+  width: 72%;
+  margin-bottom: 31px;
+}
+
+.work__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 49px;
+     -moz-column-gap: 49px;
+          column-gap: 49px;
+  row-gap: 30px;
+}
+.work__gallery .work__gallery-image {
+  height: 400px;
+}
+.work__gallery .work__btn {
+  grid-column: 2/3;
+  justify-self: center;
+  margin-bottom: 80px;
+}
+
+.work__content {
+  background-color: rgba(196, 196, 196, 0.1490196078);
+}
+.work__content .work__container-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 35px 20px 0 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.work__content .work__content-heading {
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+  font-size: 37px;
+  line-height: 51px;
+  font-family: "Inter600";
+  width: 90%;
+  padding-top: 55px;
+  position: relative;
+}
+.work__content .work__content-heading::after {
+  content: "";
+  position: absolute;
+  left: 97%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  margin-right: 10px;
+  display: inline-block;
+  height: 200px;
+  width: 3px;
+  background-color: #e2e2e2;
+}
+.work__content .work__content-text {
+  -ms-flex-preferred-size: 53%;
+      flex-basis: 53%;
+  white-space: pre-line;
+  padding-top: 10px;
+  text-align: left;
 }
