@@ -1,25 +1,52 @@
 .work__container {
-    padding-top: 65px;
+    padding-top: 68px;
+    @include mobile {
+        padding-top: 15px;
+    }
     .work__heading {
         margin-bottom: 6px;
+        @include mobile {
+            margin-bottom: 20px;
+        }
     }
     .work__text {
         width: 72%;
         margin-bottom: 31px;
+        @include mobile {
+            margin-bottom: 40px;
+            width: 97%;
+        }
     }
 }
 
 .work__gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 49px;
+    column-gap: 50px;
     row-gap: 30px;
+    @include tablet {
+        row-gap: 44px;
+        column-gap: 20px;
+    }
     .work__gallery-image {
         height: 400px;
+        @include tablet {
+            height: 230px;
+        }
+        @include mobile {
+            height: 98px;
+        }
     }
     .work__btn {
         grid-column: 2/3;        justify-self: center;
         margin-bottom: 80px;
+        text-transform: capitalize;
+        @include mobile {
+            justify-self: stretch;
+            text-align: center;
+            grid-column: 1/-1;
+            margin-bottom: 25px;
+        }
     }
 }
 
@@ -28,34 +55,59 @@
     background-color: $myWorkBack;
     .work__container-sec {
         display: flex;
-        padding: 35px 20px 0 18px;
+        padding-top: 30px;
+        padding-bottom: 65px;
         align-items: center;
+        @include mobile {
+            flex-direction: column;
+        }
     }
     .work__content-heading {
-        flex-basis: 47%;
+        flex-basis: 44%;
         font-size: 37px;
         line-height: 51px;
         font-family: $inter600;
-        width: 90%;
-        padding-top: 55px;
+        padding: 55px 20px 0 0;
         position: relative;
+        @include tablet {
+            font-size: 28px;
+            line-height: 39px;
+        }
+        @include mobile {
+            text-align: center;
+            font-size: 22px;
+            line-height: 29px;
+        }
         &::after {
-            content: "";
-            position: absolute;
-            left: 97%;
-            transform: translate(-50%, -50%);
-            top: 50%;
-            margin-right: 10px;
-            display: inline-block;
-            height: 200px;
-            width: 3px;
-            background-color: $myBorderColor;
+            @include tablet {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                height: 200px;
+                width: 3px;
+                background-color: $myBorderColor;
+            }
         }
     }
     .work__content-text { 
-        flex-basis: 53%;
-        white-space: pre-line;
+        flex-basis: 56%;
         padding-top: 10px;
         text-align: left;
+        padding-left: 40px;
+        padding-top: 30px;
+        position: relative;
+        &::before {
+            @include mobile {
+                @include topLine;
+            }
+        }
+        @include mobile {
+            padding-top: 58px;
+            width: 100%;
+            text-align: center;
+        }
     }
 }

@@ -19,3 +19,16 @@ $desktop: 1140px;
       @content;
     }
   }
+
+
+@mixin topLine {
+  content: "";
+  display: block;
+  width: 135px;
+  height: 3px;
+  background-color: $myBorderColor;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
