@@ -4,6 +4,7 @@ $myYellowBrigth:#FFE600;
 $myBlue: #6854FC;
 $mySeaBlue: #AEE2FF;
 $myBlack: #000000;
+$myCircleBackground: #C4C4C44D;
 $myWhite: #FFFFFF;
 $myGrayTransp: #C4C4C433;
 $myGrayService:#00000080;
@@ -32,3 +33,8 @@ $inter: "Inter";
 $inter500: "Inter500";
 $inter600: "Inter600";
 $inter700: "Inter700";
+
+// MEDIA QUERY
+$tablet: 1140px;
+$mobile: 820px;
+$desktop: 1140px;

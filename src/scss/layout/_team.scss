@@ -1,0 +1,53 @@
+.team {
+    border-bottom: 4px solid $myBorderColor;
+}
+
+.team__container {
+    padding-top: 96px;
+    padding-bottom: 123px;
+    display: flex;
+    align-items: center;
+    gap: 102px;
+    @include mobile {
+        padding-bottom: 40px;
+        padding-top: 76px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .team__img {
+        height: 528px;
+        border-radius: $radius;
+        @include tablet {
+            height: 297px;
+        }
+        @include mobile {
+            height: 328px;
+        }
+    }
+}
+
+.team__content {
+    padding-bottom: 27px;
+    @include mobile {
+        padding-left: 19px;
+    }
+    .team__heading {
+        width: 70%;
+        margin-bottom: 19px;
+        text-align: left;
+        @include mobile {
+            width: 90%;
+            margin-bottom: 23px;
+        }
+    }
+    
+    .team__text {
+        text-align: left;
+        margin-left: 0;
+        margin-bottom: 34px;
+        @include mobile {
+            width: 100%;
+            margin-bottom: 33px;
+        }
+    }
+}

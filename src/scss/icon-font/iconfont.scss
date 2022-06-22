@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('../fonts/iconfont.eot?1655553338632');
-	src: url('../fonts/iconfont.eot?#iefix-1655553338632') format('embedded-opentype'),
-		url('../fonts/iconfont.woff2?1655553338632') format('woff2'),
-		url('../fonts/iconfont.woff?1655553338632') format('woff'),
-		url('../fonts/iconfont.ttf?1655553338632') format('truetype');
+	src: url('../fonts/iconfont.eot?1655911604414');
+	src: url('../fonts/iconfont.eot?#iefix-1655911604414') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1655911604414') format('woff2'),
+		url('../fonts/iconfont.woff?1655911604414') format('woff'),
+		url('../fonts/iconfont.ttf?1655911604414') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -33,62 +33,70 @@ iconfont Webfont
 Glyphs list
 */
 
-.icon-arrowRight::before {
+.icon-arrleft::before {
 	content: '\ea01';
 }
 
-.icon-deliver::before {
+.icon-arrowRight::before {
 	content: '\ea02';
 }
 
-.icon-discovery::before {
+.icon-arrowrigth::before {
 	content: '\ea03';
 }
 
-.icon-execute::before {
+.icon-deliver::before {
 	content: '\ea04';
 }
 
-.icon-facebook::before {
+.icon-discovery::before {
 	content: '\ea05';
 }
 
-.icon-fire::before {
+.icon-execute::before {
 	content: '\ea06';
 }
 
-.icon-instagram::before {
+.icon-facebook::before {
 	content: '\ea07';
 }
 
-.icon-laptop::before {
+.icon-fire::before {
 	content: '\ea08';
 }
 
-.icon-linkedin::before {
+.icon-instagram::before {
 	content: '\ea09';
 }
 
-.icon-mobile::before {
+.icon-laptop::before {
 	content: '\ea0a';
 }
 
-.icon-plan::before {
+.icon-linkedin::before {
 	content: '\ea0b';
 }
 
-.icon-twitter::before {
+.icon-mobile::before {
 	content: '\ea0c';
 }
 
-.icon-world::before {
+.icon-plan::before {
 	content: '\ea0d';
 }
 
-.icon-youtube::before {
+.icon-twitter::before {
 	content: '\ea0e';
 }
 
-.icon-zoo::before {
+.icon-world::before {
 	content: '\ea0f';
+}
+
+.icon-youtube::before {
+	content: '\ea10';
+}
+
+.icon-zoo::before {
+	content: '\ea11';
 }

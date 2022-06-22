@@ -1,0 +1,33 @@
+.star {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-right: 10px;
+    margin-bottom: 1.2em;
+    border-right:  .3em solid transparent;
+    border-bottom: .7em  solid $myYellowBrigth;
+    margin-left: 10px;
+    border-left:   .3em solid transparent;  
+    font-size: 14px;
+    @include mobile {
+      font-size: 8px;
+      margin-right: 0;
+    }
+    &:before, &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: .6em;
+      left: -1em;
+      border-right:  1em solid transparent;
+      border-bottom: .7em  solid #FC0;
+      border-left:   1em solid transparent;
+      transform: rotate(-35deg);
+    }
+    &:after {  
+      transform: rotate(35deg);
+    }
+  }

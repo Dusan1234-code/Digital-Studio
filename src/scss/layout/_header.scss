@@ -13,10 +13,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .header__logo {
+        padding-top: 3px;
+        height: 26px;
+    }
     .header__wrapper {
         display: flex;
         align-items: center;
-        gap: 78px;
+        gap: 70px;
         .header__btn {
             @include mobile {
                 display: none;
@@ -36,7 +40,6 @@
             margin-left: 0;
          }   
      }   
-        
     }
     .header__bar {
         display: inline-block;

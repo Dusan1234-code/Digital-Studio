@@ -12,3 +12,13 @@ close.addEventListener("click",()=>{
     body.classList.remove("body--scrollDisabled");
     overlay.classList.remove("header__overlay--active");
 })
+
+// SWIPPER 
+const swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: ".js-next",
+      prevEl: ".js-prev",
+    },
+  });

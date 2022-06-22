@@ -1,12 +1,12 @@
 .work__container {
-    padding-top: 68px;
+    padding-top: 78px;
     @include mobile {
-        padding-top: 15px;
+        padding-top: 40px;
     }
     .work__heading {
         margin-bottom: 6px;
         @include mobile {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
     }
     .work__text {
@@ -25,7 +25,7 @@
     column-gap: 50px;
     row-gap: 30px;
     @include tablet {
-        row-gap: 44px;
+        row-gap: 39px;
         column-gap: 20px;
     }
     .work__gallery-image {
@@ -38,7 +38,8 @@
         }
     }
     .work__btn {
-        grid-column: 2/3;        justify-self: center;
+        grid-column: 2/3; 
+        justify-self: center;
         margin-bottom: 80px;
         text-transform: capitalize;
         @include mobile {
@@ -74,21 +75,16 @@
             line-height: 39px;
         }
         @include mobile {
+            padding: 61px 0 0 0;
+            width: 90%;
             text-align: center;
             font-size: 22px;
             line-height: 29px;
         }
         &::after {
-            @include tablet {
-                content: "";
-                display: inline-block;
-                position: absolute;
-                right: 0;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                height: 200px;
-                width: 3px;
-                background-color: $myBorderColor;
+            @include rightLine;
+            @include mobile {
+                display: none;
             }
         }
     }
@@ -102,11 +98,13 @@
         &::before {
             @include mobile {
                 @include topLine;
+                
             }
         }
         @include mobile {
-            padding-top: 58px;
-            width: 100%;
+            padding-top: 78px;
+            padding-left: 0;
+            width: 98%;
             text-align: center;
         }
     }

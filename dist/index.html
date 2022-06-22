@@ -6,13 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Digital Studio</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 	<link href="./favicon.ico" rel="icon">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="body js-body">
 	<header class="header">
 		<div class="container header__container">
-			<a href="index.html" class="header__logo"><img src="./images/Logo.png" alt="Logo image"></a>
+			<a href="index.html" class="header__logo">
+				<img src="./images/Logo.png" alt="Logo image" class="header__logo-img">
+			</a>
 			<div class="header__wrapper">
 				<a href="#" class="header__btn btn">Connect with us</a>
 				<button class="header__hamburger-menu js-hamburger">
@@ -209,7 +212,7 @@
 				</div>
 			</div>
 		</section>
-		<div class="work">
+		<section class="work">
 			<div class="work__container container">
 				<h2 class="work__heading section-heading">See Our Work</h2>
 				<p class="work__text section-text">Interdum ac tincidunt molestie facilisis. Nulla at erat odio bibendum diam quam. Scelerisque mus vel egestas justo, purus consequat nibh eget. Non risus feugiat porta integer.</p>
@@ -230,9 +233,177 @@
 						</p>
 				</div>
 			</div>
-		</div>
+		</section>
+		<section class="team">
+			<div class="team__container container">
+				<img src="./images/workpicture.png" alt="People at work" class="team__img">
+				<div class="team__content">
+					<h2 class="team__heading section-heading">Designed and built by an astonishing creative team.</h2>
+					<p class="team__text section-text">Et eleifend consectetur tellus consectetur nibh non urna lobortis. Quis sapien enim posuere mollis risus. Nec dictumst ullamcorper et leo. Varius praesent tinc.</p>
+					<a href="#" class="team__btn btn">About us</a>
+				</div>
+			</div>
+		</section>
+		<section class="ultimate">
+			<div class="ultimate__container container">
+				<div class="ultimate__content">
+					<h2 class="ultimate__heading section-heading">Ultimate Services for your businesses.</h2>
+					<p class="ultimate__text section-text">Nunc, porta phasellus nisl ac risus eget lectus neque, mauris. Dictumst mauris, id eget tellus tincidunt sit nisi, non cras. </p>
+					<div class="ultimate__grid">
+						<div class="ultimate__box process__box">
+							<span class="ultimate__icon icon-discovery process__icon red"></span>
+							<div class="ultimate__box-content">
+								<h3 class="ultimate__heading-box">Lorem ipsum</h3>
+								<p class="ultimate__box-text process__box-text">
+									Ut vitae sit orci, ultricies. A nunc nullam feugiat facilisi bibendum amet.
+								</p>
+							</div>
+						</div>
+						<div class="ultimate__box process__box">
+							<span class="ultimate__icon icon-plan process__icon blue"></span>
+							<div class="ultimate__box-content">
+								<h3 class="ultimate__heading-box">Lorem ipsum</h3>
+								<p class="ultimate__box-text process__box-text">
+									Nisi vivamus nisl nullam justo, sed at odio sit. Et nunc vestibulum.
+								</p>
+							</div>
+						</div>
+						<div class="ultimate__box process__box">
+							<span class="ultimate__icon icon-execute process__icon green"></span>
+							<div class="ultimate__box-content">
+								<h3 class="ultimate__heading-box">Lorem ipsum</h3>
+								<p class="ultimate__box-text process__box-text">
+									Sit lobortis semper mus nulla ultrices ridiculus cum gravida phasellus.
+								</p>
+							</div>
+						</div>
+						<div class="ultimate__box process__box">
+							<span class="ultimate__icon icon-deliver process__icon yellow"></span>
+							<div class="ultimate__box-content">
+								<h3 class="ultimate__heading-box">Lorem ipsum</h3>
+								<p class="ultimate__box-text process__box-text">
+									Quis cras vitae laoreet in mauris nibh at. In velit semper ullamcorper porta.
+								</p>
+							</div>
+						</div>
+						<a href="#" class="ultimate__btn btn">See all</a>
+					</div>
+				</div>
+				<img src="./images/ultimatesetup.png" alt="Setup image" class="ultimate__img">
+			</div>
+		</section>
+		<section class="people">
+			<div class="people__container container ">
+				<img src="./images/people.png" alt="Pictre of people" class="people__img">
+				<div class="people__content-wrapper swiper">
+					<h2 class="people__heading section-heading">Meet Client Satisfaction after working with us</h2>
+					<div class="people__content swiper-wrapper">
+						<article class="people__article swiper-slide">
+							<h3 class="people__article-heading">
+								Doesn’t feel like an agency</h3>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<p class="people_article-text section-text">
+								Ultricies amet vulputate nulla in elit elit orci vitae tortor. Nunc ut pretium lectus aliquet varius pretium. Nec convallis morbi sapien aliquet augue. Nulla nulla integer pellentesque neque cum amet, turpis lacus, massa. Eu velit nunc adipiscing tincidunt blandi.
+							</p>
+							<div class="people__article-box">
+								<div class="people__article-box-details">
+									<img src="./images/person1.png" alt="Person one" class="people__article-box-img">
+									<div class="people__article-desc">
+										<h3 class="people__article-box-name">Gwen Stacy</h3>
+										<span class="people__article-box-position">Cloudexter</span>
+									</div>
+								</div>
+								<div class="people__article-box-list">
+									<a href="javascript:void(0)" class="people__arrow js-prev">
+										<span class="icon-arrleft">
+											<span class="sr-only">Leads to next article</span>
+										</span>
+									</a>
+									<a href="javascript:void(0)" class="people__arrow js-next">
+										<span class="icon-arrowrigth">
+											<span class="sr-only">Leads to previous article</span>
+										</span>
+									</a>
+								</div>
+							</div>
+							
+						</article>
+						<article class="people__article swiper-slide">
+							<h3 class="people__article-heading">
+								Just like we are friends</h3>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<p class="people_article-text section-text">
+								Ultricies amet vulputate nulla in elit elit orci vitae tortor. Nunc ut pretium lectus aliquet varius pretium. Nec convallis morbi sapien aliquet augue. Nulla nulla integer pellentesque neque cum amet, turpis lacus, massa. Eu velit nunc adipiscing tincidunt blandi.
+							</p>
+							<div class="people__article-box">
+								<div class="people__article-box-details">
+									<img src="./images/person2.png" alt="Person one" class="people__article-box-img">
+									<div class="people__article-desc">
+										<h3 class="people__article-box-name">Joana Jonhson</h3>
+										<span class="people__article-box-position">Developer</span>
+									</div>
+								</div>
+								<div class="people__article-box-list">
+									<a href="javascript:void(0)" class="people__arrow js-prev">
+										<span class="icon-arrleft">
+											<span class="sr-only">Leads to next article</span>
+										</span>
+									</a>
+									<a href="javascript:void(0)" class="people__arrow js-next">
+										<span class="icon-arrowrigth">
+											<span class="sr-only">Leads to previous article</span>
+										</span>
+									</a>
+								</div>
+							</div>
+							
+						</article>
+						<article class="people__article swiper-slide">
+							<h3 class="people__article-heading">
+								Easy to work with</h3>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<p class="people_article-text section-text">
+								Ultricies amet vulputate nulla in elit elit orci vitae tortor. Nunc ut pretium lectus aliquet varius pretium. Nec convallis morbi sapien aliquet augue. Nulla nulla integer pellentesque neque cum amet, turpis lacus, massa. Eu velit nunc adipiscing tincidunt blandi.
+							</p>
+							<div class="people__article-box">
+								<div class="people__article-box-details">
+									<img src="./images/person3.png" alt="Person one" class="people__article-box-img">
+									<div class="people__article-desc">
+										<h3 class="people__article-box-name">Serena Smith</h3>
+										<span class="people__article-box-position">Associate</span>
+									</div>
+								</div>
+								<div class="people__article-box-list">
+									<a href="javascript:void(0)" class="people__arrow js-prev">
+										<span class="icon-arrleft">
+											<span class="sr-only">Leads to next article</span>
+										</span>
+									</a>
+									<a href="javascript:void(0)" class="people__arrow js-next">
+										<span class="icon-arrowrigth">
+											<span class="sr-only">Leads to previous article</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer></footer>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 </html>
