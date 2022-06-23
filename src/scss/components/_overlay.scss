@@ -87,7 +87,7 @@
         transition: background-color 0.3s ease;
         &:hover {
             @include desktop {
-                background-color: $myYellowBrigth;
+                background-color: $myYellowBright;
             }
         }
     }

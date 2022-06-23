@@ -1,0 +1,112 @@
+.accordion {
+    padding-top: 160px;
+    @include mobile {
+        padding-top: 70px;
+    }
+    .accordion__heading {
+        margin-bottom: 32px;
+        @include mobile {
+            font-size: 24px;
+            margin-bottom: 20px;
+            line-height: 33px;
+        }
+    }
+    .accordion__text {
+        width: 100%;
+        margin-bottom: 42px;
+    }
+}
+
+.accordion__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accordion__wrapper {
+    width: 72%;
+    background-color: $myPink;
+    padding: 37px 32px 49px 44px;
+    border-radius: $radius;
+    margin-bottom: 25px;
+    @include mobile {
+        width: 100%;
+        padding: 25px 32px 40px 32px;
+    }
+    .accordion__panel-text {
+        letter-spacing: 0.02em;
+        padding-top: 23px;
+        font-size: 14px;
+        line-height: 22px;
+        color: $myGrayService;
+        width: 93%;
+    }
+}
+
+.accordion__subheading {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: $inter600;
+    position: relative;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    padding-right: 30px;
+    @include mobile {
+        width: 100%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    &:hover {
+        @include desktop {
+            opacity: 0.7;
+        }
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 20px;
+        height: 3px;
+        background-color: $myBlack;
+        @include mobile {
+            width: 14px;
+        }
+    }
+    &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 20px;
+        height: 3px;
+        background-color: $myBlack;
+        transform: rotate(90deg);
+        transition: transform 0.5s ease;
+        @include mobile {
+            width: 14px;
+        }
+    }
+}
+
+.accordion__panel {
+    height: 0;
+    opacity: 0;
+    transition: height 0.4s ease;
+}
+
+.accordion__wrapper--opens .accordion__panel {
+    height: auto;
+    opacity: 1;
+}
+
+.accordion__wrapper--opens .accordion__subheading::before {
+    transform: rotate(0deg);
+}
+
+
+
+
+

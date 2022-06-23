@@ -22,8 +22,7 @@
     position: absolute;
     width: 1210px;
     height: 637px;
-    padding-left: 25px;
-    left: 50%;
+    left: 52%;
     z-index: -1;
     transform: translateX(-50%);
 }
@@ -62,7 +61,7 @@
         height: 40px;
         border-radius: 50%;
         margin-right: 18px;
-        background-color: $myYellowBrigth;
+        background-color: $myYellowBright;
         @include mobile {
             height: 33px;
             width: 33px;

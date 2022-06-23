@@ -1,5 +1,5 @@
 .people__container {
-    padding-top: 142px;
+    padding-top: 127px;
     display: flex;
     gap: 46px;
     @include mobile {
@@ -20,7 +20,7 @@
 .people__heading {
     text-align: left;
     width: 90%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     @include mobile {
         font-size: 24px;
         line-height: 32px;

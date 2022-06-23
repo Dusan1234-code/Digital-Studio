@@ -1,0 +1,76 @@
+.footer {
+     background-color: $myFooterColor;
+     padding: 65px 0 65px 0;
+     .footer__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 75px;
+        @include mobile {
+            gap: 40px;
+        }
+     }
+     .footer__img {
+       width: 156px;
+     }
+}
+
+.footer__list {
+    display: flex;
+    gap: 76px;
+    @include mobile {
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__link {
+        &:active,
+        &:visited {
+            color: $myWhite;
+            &:hover {
+                color: $myYellowBright;
+            }
+        }
+    }
+}
+
+.footer__net-list {
+    gap: 50px;
+    @include mobile {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .footer__net-item {
+        @include mobile {
+            border-radius: 10px;
+        }
+    }
+    .footer__net-link {
+        @include mobile {
+            font-size: 16px;
+            padding: 10px;
+        }
+        &:active,
+        &:visited {
+            color: $myWhite;
+            &:hover {
+                color: $myFooterColor;
+            }
+        }
+    }
+}
+
+.footer__copy {
+    color: #FFFFFF80;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: $inter500;
+    @include mobile {
+        font-size: 12px;
+        line-height: 15px;
+        width: 70%;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
