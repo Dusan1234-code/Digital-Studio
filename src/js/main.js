@@ -4,6 +4,7 @@ const close = document.querySelector(".js-close");
 const body = document.querySelector(".js-body");
 const accordionButtons = document.querySelectorAll(".js-accordion-btn");
 const accWrapper = document.querySelectorAll(".js-acc-wrapper");
+const overlayLinks = document.querySelectorAll(".js-header-link");
 
 // Display overlay menu
 hamburger.addEventListener("click",()=>{
@@ -15,6 +16,14 @@ hamburger.addEventListener("click",()=>{
 close.addEventListener("click",()=>{
     body.classList.remove("body--scrollDisabled");
     overlay.classList.remove("header__overlay--active");
+})
+
+// Overlay link click closes menu
+overlayLinks.forEach((link)=>{
+  link.addEventListener("click",()=>{
+    body.classList.remove("body--scrollDisabled");
+    overlay.classList.remove("header__overlay--active");
+  })
 })
 
 // SWIPPER 

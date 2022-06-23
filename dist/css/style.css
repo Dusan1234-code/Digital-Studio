@@ -104,6 +104,10 @@ a {
   font-style: normal;
   font-display: swap;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   width: 100%;
   -o-object-fit: cover;
@@ -1936,7 +1940,7 @@ Glyphs list
   .footer__copy {
     font-size: 12px;
     line-height: 15px;
-    width: 70%;
+    width: 60%;
     text-align: center;
     margin-top: 20px;
   }
