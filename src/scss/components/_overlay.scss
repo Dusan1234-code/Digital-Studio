@@ -63,6 +63,7 @@
     font-size: 36px;
     line-height: 50px;
     margin-bottom: 54px;
+    color: $myBlack;
     .header__link {
         &:hover {
             @include desktop { 
@@ -93,6 +94,7 @@
     }
     .header__net-link {
         padding: 17px;
+        color: $myBlue;
         &:active,
         &:visited {
             color: $myBlue;

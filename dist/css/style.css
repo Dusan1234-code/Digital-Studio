@@ -377,6 +377,7 @@ Glyphs list
   font-size: 36px;
   line-height: 50px;
   margin-bottom: 54px;
+  color: #000000;
 }
 @media (min-width: 1140px) {
   .header__list .header__link:hover {
@@ -409,6 +410,7 @@ Glyphs list
 }
 .header__net-list .header__net-link {
   padding: 17px;
+  color: #6854FC;
 }
 .header__net-list .header__net-link:active, .header__net-list .header__net-link:visited {
   color: #6854FC;
