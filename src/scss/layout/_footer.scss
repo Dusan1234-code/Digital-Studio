@@ -45,16 +45,16 @@
         }
     }
     .footer__net-link {
-        @include mobile {
-            font-size: 16px;
-            padding: 10px;
-        }
         &:active,
         &:visited {
             color: $myWhite;
             &:hover {
                 color: $myFooterColor;
             }
+        }
+        @include mobile {
+            font-size: 16px;
+            padding: 10px;
         }
     }
 }
