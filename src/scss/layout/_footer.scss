@@ -23,15 +23,13 @@
         flex-direction: column;
         text-align: center;
     }
-    .footer__link {
-        &:active,
-        &:visited {
+        .footer__link,
+        .footer__link:visited {
             color: $myWhite;
-            &:hover {
-                color: $myYellowBright;
-            }
+                &:hover {
+                    color: $myYellowBright;
+                }
         }
-    }
 }
 
 .footer__net-list {

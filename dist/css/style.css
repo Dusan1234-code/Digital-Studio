@@ -350,12 +350,13 @@ Glyphs list
 .header__overlay-nav .header__close {
   background-color: rgba(196, 196, 196, 0.2);
   border-radius: 50%;
+  cursor: pointer;
   position: relative;
   padding: 30px;
 }
 .header__overlay-nav .header__close::after {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -379,13 +380,13 @@ Glyphs list
   margin-bottom: 54px;
   color: #000000;
 }
+.header__list .header__link:visited {
+  color: #000000;
+}
 @media (min-width: 1140px) {
   .header__list .header__link:hover {
     opacity: 0.6;
   }
-}
-.header__list .header__link:active, .header__list .header__link:visited {
-  color: #000000;
 }
 
 .header__net-list {
@@ -1894,10 +1895,12 @@ Glyphs list
     text-align: center;
   }
 }
-.footer__list .footer__link:active, .footer__list .footer__link:visited {
+.footer__list .footer__link,
+.footer__list .footer__link:visited {
   color: #FFFFFF;
 }
-.footer__list .footer__link:active:hover, .footer__list .footer__link:visited:hover {
+.footer__list .footer__link:hover,
+.footer__list .footer__link:visited:hover {
   color: #FFE600;
 }
 

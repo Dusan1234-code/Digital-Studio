@@ -41,11 +41,12 @@
     .header__close {
         background-color: $myGrayTransp;
         border-radius: 50%;
+        cursor: pointer;
         position: relative;
         padding: 30px;
         &::after {
             position: absolute;
-            top: 45%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
             content: '\d7';
@@ -64,15 +65,14 @@
     line-height: 50px;
     margin-bottom: 54px;
     color: $myBlack;
-    .header__link {
+    .header__link{
+        &:visited {
+            color: $myBlack;
+        }
         &:hover {
             @include desktop { 
                 opacity: 0.6;
             }
-        }
-        &:active,
-        &:visited {
-            color: $myBlack;
         }
     }
 }
