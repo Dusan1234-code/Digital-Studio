@@ -1,0 +1,17 @@
+@keyframes burgerAnimation {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        width: 40%;
+    }
+    60% {
+        width: 60%;
+    }
+    
+    100% {
+        margin-left: 0;
+        opacity: 1;
+        width: 100%;
+    }
+}

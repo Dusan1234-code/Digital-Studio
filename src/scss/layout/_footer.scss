@@ -23,12 +23,15 @@
         flex-direction: column;
         text-align: center;
     }
-        .footer__link,
-        .footer__link:visited {
-            color: $myWhite;
-                &:hover {
+        .footer__link {
+            &:visited{
+                color: $myWhite;
+            }
+            &:hover {
+                @include desktop {
                     color: $myYellowBright;
                 }
+            }
         }
 }
 
@@ -49,7 +52,9 @@
         &:visited {
             color: $myWhite;
             &:hover {
-                color: $myFooterColor;
+                @include desktop {
+                    color: $myFooterColor;
+                }
             }
         }
         @include mobile {

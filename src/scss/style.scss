@@ -3,14 +3,16 @@
 
 @import 'icon-font/iconfont';
 
-@import "components/overlay";
-@import "components/accordion";
 
 @import "abstracts/mixin";
 @import "abstracts/variables";
 @import "abstracts/fonts";
 @import "abstracts/processIcons";
 @import "abstracts/star";
+@import "abstracts/animations";
+
+@import "components/overlay";
+@import "components/accordion";
 
 @import "layout/header";
 @import "layout/main";
