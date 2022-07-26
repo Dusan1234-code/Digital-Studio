@@ -55,57 +55,44 @@
 .work__content {
     background-color: $myWorkBack;
     .work__container-sec {
-        display: flex;
+        column-count: 2;
+        column-rule: 2px solid $myBorderColor;
         padding-top: 30px;
         padding-bottom: 65px;
-        align-items: center;
         @include mobile {
-            flex-direction: column;
+            column-count: 1;
         }
     }
     .work__content-heading {
-        flex-basis: 44%;
         font-size: 37px;
         line-height: 51px;
+        width: 90%;
+        margin: 0 auto;
         font-family: $inter600;
-        padding: 55px 20px 0 0;
+        padding: 55px 0;
         position: relative;
         @include tablet {
             font-size: 28px;
             line-height: 39px;
         }
         @include mobile {
-            padding: 61px 0 0 0;
-            width: 90%;
+            padding: 30px 0;
             text-align: center;
             font-size: 22px;
             line-height: 29px;
         }
-        &::after {
-            @include rightLine;
-            @include mobile {
-                display: none;
-            }
-        }
     }
     .work__content-text { 
-        flex-basis: 56%;
-        padding-top: 10px;
         text-align: left;
-        padding-left: 40px;
         padding-top: 30px;
         position: relative;
+        @include mobile {
+            text-align: center;
+        }
         &::before {
             @include mobile {
                 @include topLine;
-                
             }
-        }
-        @include mobile {
-            padding-top: 78px;
-            padding-left: 0;
-            width: 98%;
-            text-align: center;
         }
     }
 }

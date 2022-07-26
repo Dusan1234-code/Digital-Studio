@@ -23,19 +23,7 @@
   height: 3px;
   background-color: $myBorderColor;
   position: absolute;
-  top: 20%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@mixin rightLine {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 200px;
-  width: 3px;
-  background-color: $myBorderColor;
+  transform: translateX(-50%)
 }
